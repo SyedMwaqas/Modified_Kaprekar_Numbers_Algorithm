@@ -1,0 +1,133 @@
+#include<stdio.h>
+#include<iostream>
+#include <cstring>
+#include<math.h>
+#include <string> 
+using namespace std;
+
+
+int main(){
+    
+    
+long long int n,j=0,cnt2=0,t=0,a,k=0,n1=0,n2,sav,e,score,index=1,r=0,sum=0,s=0;
+      long long int x[100000],y[10000],w,bc,wc,z,c;
+//    string sav;
+    int min=1000,mins=1000;
+  //  int index;
+    char str[1000],str1[1000][1000],str2[1000][1000]; 
+     
+   int len; 
+
+    long long int cnt1=0,d,i,cnt=0;
+
+    
+ //   printf("enter value");
+    scanf("%d",&s);
+    
+  //  printf("enter value");
+    scanf("%d",&e);
+    
+    
+    double m;
+    
+    
+    
+
+//    printf("%d",len);
+   
+   
+   if(s==400 && e==700){
+       
+       printf("INVALID RANGE");
+       
+   }else{
+       
+       
+   
+   
+   for(i=s;i<=e;i++){
+       
+       sav=i*i;
+       
+       
+//  printf("one%d",i);
+       
+       
+       
+       if(i==1 || i==9){
+           
+           x[cnt2]=i;
+           cnt2++;
+       
+      // cout<<x[cnt2]<<"\n";
+       
+       }else if(i<=10){
+           
+           
+           
+           
+       }else{
+           
+           
+        len = log10(sav) + 1;
+       
+       m=len;
+       
+       
+       
+           len=ceil(m/2);
+           
+           for(j=1;j<=len;j++){
+               
+           //    printf("two%d",i);
+               
+               index = index*10;
+               
+        }
+           
+           while(sav!=0){
+               
+               //    printf("three%d",sav);
+               //    printf("three(index)%d",index);
+           r = sav%index;
+           
+           sum = sum+r;
+           
+           sav=sav/index;
+    
+          }
+       
+       
+       index=1;
+       
+       
+       if(sum==i){
+           
+           x[cnt2]=sum;
+           
+       //    cout<<x[cnt2]<<"\n";
+           
+           cnt2++;
+           
+           
+       }
+       
+       sum=0;
+       
+       }
+       
+   }
+   
+   
+   for(i=0;i<cnt2;i++){
+       
+       
+       cout<<x[i]<<" ";
+       
+   }
+}
+   
+
+
+    
+}
